@@ -25,7 +25,6 @@ function! unitquickrun#pythonunit#run(config)
 
   let defname = substitute(defname, '(.*$', '', '')
   let defname = substitute(defname, '^\s*def\s\|^def\s', '', '')
-
   let classpos = search('^class\sTest*.', 'bwWn')
   let classname = getline(classpos)
   let classname = substitute(classname, '(.*$', '', '')
@@ -35,3 +34,6 @@ function! unitquickrun#pythonunit#run(config)
 
   let g:quickrun_config['python.unit']['exec'] = '%c %o' . ' ' . cmdopt
 endfunction
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
