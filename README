@@ -1,0 +1,25 @@
+unitquickrun
+============
+
+This plugin is a wrapper for QuickRun.vim
+
+Use cases.
+
+* If you want to run Python unittest file using `nosetest` as a testrunner.
+  Type <Leader>r and then all test case runs.
+  - You want a specific test case.
+  - You want to run all test file.
+
+  This plugin rewrite QuickRun's g:quickrun_config before run QuickRun.
+  For example, `nosetest` can set like
+  `nosetest test_file.py:TestClass.test_foo`
+  unitquickrun.vim rewrite g:quickrun_config and then run quickrun#command().
+
+
+* Quickrun.vim
+  https://github.com/thinca/vim-quickrun
+
+* ToDo
+  Write documents.
+
+This plugin is a very experimental plugin.
