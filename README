@@ -1,6 +1,11 @@
 unitquickrun
 ============
 
+This plugin is now deprecated.
+You can use QuickRun hook structure instead.
+https://github.com/heavenshell/vim-quickrun-hook-unittest
+
+
 This plugin is a wrapper for QuickRun.vim
 
 Use cases.
